@@ -1,0 +1,16 @@
+name: soh-fleet
+channels: [conda-forge, defaults]
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - pyarrow
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - jupyter
+  - pip
+  - pip:
+      - tensorflow==2.15.*
+      - joblib
+      - pyyaml

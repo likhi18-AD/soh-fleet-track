@@ -1,0 +1,18 @@
+# data (keep only the placeholder)
+data/*
+!data/.gitkeep
+
+# artifacts / model files
+*.rar
+*.zip
+*.parquet
+*.pkl
+*.h5
+models/
+runs/
+
+# python/cache
+__pycache__/
+.ipynb_checkpoints/
+*.egg-info/
+.env
