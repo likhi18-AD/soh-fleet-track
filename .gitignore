@@ -8,8 +8,8 @@ data/processed/
 # Model artifacts and binaries
 models/*.h5
 models/*.keras
-# Uncomment the following line if you do not want to version any pickle files
-# models/*.pkl
+# Keep small pickle files for reproducibility
+!models/*.pkl
 
 # Training runs and logs
 runs/
