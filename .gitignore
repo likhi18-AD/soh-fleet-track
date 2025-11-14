@@ -1,18 +1,38 @@
-# data (keep only the placeholder)
+# Data folders
 data/*
 !data/.gitkeep
+data/raw/
+data/interim/
+data/processed/
 
-# artifacts / model files
-*.rar
-*.zip
-*.parquet
-*.pkl
-*.h5
-models/
+# Model artifacts and binaries
+models/*.h5
+models/*.keras
+# Keep small pickle files for reproducibility
+!models/*.pkl
+
+# Training runs and logs
 runs/
+artifacts/
+checkpoints/
 
-# python/cache
+# Python cache and environment
 __pycache__/
-.ipynb_checkpoints/
 *.egg-info/
+*.pyc
+.venv/
 .env
+
+# Archives and temporary files
+*.zip
+*.rar
+*.tar
+*.parquet
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and system files
+.vscode/
+.DS_Store
+Thumbs.db
